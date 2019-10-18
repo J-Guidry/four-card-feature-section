@@ -3,14 +3,59 @@ body {
     font-size: 15px;
 }
 
-@media screen and (max-width: 375px){
-    header {
-        margin-top: 50px;
-        text-align: center;
-    }
-    
+@media screen and (max-width: 950px){   
     .container {
-        max-width: 80%;
+        max-width: 90%;
         margin: auto;
     }
+}
+
+
+header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+p {
+    width: 100%;
+    font-weight:200;
+}
+
+p:first-child {
+    font-size: 1.4rem;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 11px 9px 22px -12px rgba(17,17,17,1);
+    -moz-box-shadow: 11px 9px 22px -12px rgba(17,17,17,1);
+    box-shadow: 11px 9px 22px -12px rgba(17,17,17,1);
+    margin-bottom: 20px;
+}
+
+.card:first-of-type {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card:nth-of-type(2) {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card:nth-of-type(3) {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card:nth-of-type(4) {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
 }
